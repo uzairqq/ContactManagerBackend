@@ -5,6 +5,10 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
+app.get("/api/contacts", (req, res) => {
+  res.send("Get All Contacts");
+});
+
 app.listen(PORT, () => {
   console.log(`I am Listening on Port`, PORT);
 });
